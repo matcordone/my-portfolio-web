@@ -6,3 +6,7 @@ variable "origin_id" {
   description = "The ID of the CloudFront origin"
   type        = string
 }
+variable "oidc_provider_arn" {
+  description = "The ARN of the OIDC provider"
+  type        = string
+}

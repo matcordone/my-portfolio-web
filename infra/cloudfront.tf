@@ -40,4 +40,5 @@ resource "aws_cloudfront_distribution" "my_distribution" {
       restriction_type = "none"
     }
   }
+  depends_on = [aws_s3_bucket.my_bucket]
 }
