@@ -1,10 +1,502 @@
-<!-- web/index.html -->
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
-<head>
-  <title>Mi Portfolio</title>
-</head>
-<body>
-  <h1>Hello World desde CloudFront + S3 Second test.</h1>
+	<head>
+		<title>Mateo Cordone - Cloud Engineer</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="container"></div>
+				<div class="content-bg">
+				
+				<a href="#" class="image avatar" onclick="this.classList.toggle('zoom')"> <img src="images/avatar.jpg" alt="Mateo Cordone" style="width: 150px; height: 150px; object-fit: cover; border-radius: 100%; border: 3px solid rgba(255, 255, 255, 0.184); margin-left: -1px;"/></a>
+				<h1><strong>Mateo Cordone</strong></h1>
+				<p>
+  					Cloud & DevOps Engineer – Automation-first. Scalable. Secure. Efficient. Resilient.<br />
+					</p>
+					  <em>My portfolio – Built with purpose.<em></a></h1>
+				</div>
+			</header>
+		<!-- Main -->
+			<div id="main">
+
+				<!-- One -->
+					<section id="one">
+						<header class="major">
+							<h2>Hi - I'm Mateo<br/></h2>
+						</header>
+						<p><span style="font-style: normal;">👨‍💻</span> I’m a <strong style="color: #007acc;">self-taught</strong> Cloud & DevOps Engineer with a strong focus on automation and infrastructure. <br><span style="font-style: normal;">🎥</span> I also create tech content on <strong style="color: #007acc;">YouTube</strong> to share what I learn along the way. <br><span style="font-style: normal;">💼</span>I take on <strong style="color: #007acc;">Freelance</strong> DevOps and cloud projects while continuously building and documenting my hands-on experience. </p>
+						<ul class="actions">
+							<li><button class="button" onclick="toggleBio()">Learn More</button></li>
+						</ul>
+							<div id="bio" style="display: none; margin-top: 1em;">
+  							<p>
+							<h3><br>🤷 About me:</h3>
+   							I’m Mateo Cordone, a Cloud & DevOps Engineer with a strong foundation in cloud infrastructure, automation, and Infrastructure as Code. I specialize in deploying scalable, secure, and cost-effective solutions using AWS and Terraform, and I take pride in writing clean, maintainable code for infrastructure and automation workflows.<br>
+							<br>What sets me apart is my ability to learn independently, ship quickly, and continuously improve both my technical stack and communication skills. I’m highly driven by problem-solving and delivering real impact, whether by improving system reliability, speeding up deployment times, or reducing operational overhead through automation. <br>
+							<br> Outside of my technical work, I’m passionate about content creation and knowledge sharing. I run a YouTube channel where I simplify DevOps concepts and document my journey as I grow professionally. This has strengthened my ability to communicate clearly and help others understand complex topics.
+							I’m actively seeking opportunities where I can contribute to high-performing teams, work on meaningful cloud infrastructure projects, and continue growing in a collaborative, forward-thinking environment.
+							
+							<br><br><h3><br>⚙️ My technical experience includes:</h3>
+							•	Provisioning infrastructure with Terraform and AWS<br>
+							•	Automating deployments using GitHub Actions and CI/CD pipelines <br>
+							•	Containerization with Docker and ECS <br>
+							•	Strong understanding of Linux environments <br>
+							•	Managing IAM roles and policies with a focus on least-privilege access <br>
+							•	Debugging and optimizing systems using tools like CloudWatch <br>
+							•   Writing Python scripts to automate AWS services with boto3 and streamline DevOps workflows<br>
+						</p>
+					</div>
+				</section>
+
+				<!-- Two -->
+					<section id="two">
+						<h2>Recent Work</h2>
+						<div class="row">
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/awscp.png" class="image fit thumb"><img src="images/awscp.png" alt="AWS Cloud Practitioner badge" /></a>
+								<h3><a href="https://www.credly.com/badges/8e50f2c9-4d45-4282-a766-32da9a02faf2/public_url">AWS Cloud Practicioner Fundational</a></h3>
+								<p>AWS certification for cloud fluency and foundational knowledge.</p>
+							</article>
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/tfa.png" class="image fit thumb"><img src="images/tfa.png" alt="Terraform Associate badge" /></a>
+								<h3><a href="https://www.credly.com/badges/150c7c6c-cbe6-4c04-bbf5-6671b3c416a9/public_url"> Terraform Associate</a></h3>
+								<p>Credential validating Terraform infrastructure automation skills and best practices.</p>
+							</article>
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/Video_Roadmap.png" class="image fit thumb"><img src="images/Video_Roadmap.png" alt="DevOps Roadmap 2025 video thumbnail" /></a>
+								<h3><a href="https://www.youtube.com/@Mateo.Cordone">DevOps Roadmap 2025</a></h3>
+								<p>An overview of my personal learning path to become a DevOps engineer — tools, strategies, and lessons learned along the way.</p>
+							</article>
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/video-ec2.jpg" class="image fit thumb"><img src="images/video-ec2.jpg" alt="EC2 automation with Terraform and Python thumbnail" /></a>
+								<h3><a href="https://www.youtube.com/watch?v=Gqm2Mshh7Ws&t=1079s">EC2 with Terraform & Python</a></h3>
+								<p>A hands-on automation project using Terraform and Python to deploy and manage EC2 infrastructure on AWS.
+								</p>
+							</article>
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/text-to-speech.jpg" class="image fit thumb"><img src="images/text-to-speech.jpg" alt="AWS text-to-speech WebApp deployed using terraform and Python boto3 module for lambda" /></a>
+								<h3><a href="https://github.com/matcordone/aws-text-to-speech"> text-to-speech Web App</a></h3>
+								<p>Convert text into audio with Amazon Polly — a lightweight, serverless TTS app deployed on AWS with Terraform and Python.</p>
+							</article>
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/ec2-vs-fargate.webp" class="image fit thumb"><img src="images/ec2-vs-fargate.webp" alt="ECS with EC2 vs Fargate comparison thumbnail" /></a>
+								<h3>ECS with <a href="https://github.com/matcordone/ecs-ec2">EC2</a> & <a href="https://github.com/matcordone/ecs-fargate">Fargate</a></h3>
+								<p>Hands-on implementations of Amazon ECS using both EC2 and Fargate launch types — deployed and managed with Terraform.</p>
+							</article>
+						</div>
+						<ul class="actions">
+							<li><a href="https://github.com/matcordone?tab=repositories" class="button">Full Portfolio</a></li>
+						</ul>
+					</section>
+
+				<!-- Three -->
+					<section id="three">
+						<h2>Get In Touch</h2>
+						<p>Thanks for visiting! If you're interested in collaborating, learning together,  
+or just chatting about Cloud, DevOps, or anything tech-related — I'd love to connect.  
+Feel free to reach out and I'll get back to you as soon as I can.</p>
+						<div class="row">
+							<div class="col-8 col-12-small">
+								<form method="get" action="mailto:matcordone@gmail.com" enctype="text/plain">
+									<div class="row gtr-uniform gtr-50">
+										<div class="col-6 col-12-xsmall"><input type="text" name="subject" id="subject" placeholder="Subject" /></div>
+										<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
+										<div class="col-12"><textarea name="body" id="message" placeholder="Message" rows="4"></textarea></div>
+									</div> <br>
+									<ul class="actions">
+										<li><input type="button" value="Send Message" onclick="sendEmail()" /></li>
+									</ul>
+								</form>
+								<script>
+  								function sendEmail() {
+									const message = document.getElementById('message').value;
+									const body = encodeURIComponent(message);
+									const subject = encodeURIComponent(name + document.getElementById('subject').value);
+									const mailto = `mailto:matcordone@gmail.com?subject=${subject}&body=${body}`;
+									window.location.href = mailto;
+									  }
+									  </script>
+							</div>
+							<div class="col-4 col-12-small">
+								<ul class="labeled-icons">
+									<li>
+										<h3 class="icon solid fa-home"><span class="label">Address</span></h3>
+										Zona Norte<br/>
+										Buenos Aires, Argentina
+									</li>
+									<li>
+										<h3 class="icon solid fa-mobile-alt"><span class="label">Phone</span></h3>
+										+54 9 11 2452 8074
+									</li>
+									<li>
+										<h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
+										<a href="mailto:matcordone@gmail.com">matcordone@gmail.com</a>
+										
+									</li>
+								</ul>
+							</div>
+						</div>
+					</section>
+
+				<!-- Four -->
+				<!--
+					<section id="four">
+						<h2>Elements</h2>
+
+						<section>
+							<h4>Text</h4>
+							<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+							This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+							This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+							<hr />
+							<header>
+								<h4>Heading with a Subtitle</h4>
+								<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+							</header>
+							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+							<header>
+								<h5>Heading with a Subtitle</h5>
+								<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+							</header>
+							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+							<hr />
+							<h2>Heading Level 2</h2>
+							<h3>Heading Level 3</h3>
+							<h4>Heading Level 4</h4>
+							<h5>Heading Level 5</h5>
+							<h6>Heading Level 6</h6>
+							<hr />
+							<h5>Blockquote</h5>
+							<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+							<h5>Preformatted</h5>
+							<pre><code>i = 0;
+
+while (!deck.isInOrder()) {
+print 'Iteration ' + i;
+deck.shuffle();
+i++;
+}
+
+print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+						</section>
+
+						<section>
+							<h4>Lists</h4>
+							<div class="row">
+								<div class="col-6 col-12-xsmall">
+									<h5>Unordered</h5>
+									<ul>
+										<li>Dolor pulvinar etiam magna etiam.</li>
+										<li>Sagittis adipiscing lorem eleifend.</li>
+										<li>Felis enim feugiat dolore viverra.</li>
+									</ul>
+									<h5>Alternate</h5>
+									<ul class="alt">
+										<li>Dolor pulvinar etiam magna etiam.</li>
+										<li>Sagittis adipiscing lorem eleifend.</li>
+										<li>Felis enim feugiat dolore viverra.</li>
+									</ul>
+								</div>
+								<div class="col-6 col-12-xsmall">
+									<h5>Ordered</h5>
+									<ol>
+										<li>Dolor pulvinar etiam magna etiam.</li>
+										<li>Etiam vel felis at lorem sed viverra.</li>
+										<li>Felis enim feugiat dolore viverra.</li>
+										<li>Dolor pulvinar etiam magna etiam.</li>
+										<li>Etiam vel felis at lorem sed viverra.</li>
+										<li>Felis enim feugiat dolore viverra.</li>
+									</ol>
+									<h5>Icons</h5>
+									<ul class="icons">
+										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+										<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+										<li><a href="#" class="icon brands fa-tumblr"><span class="label">Tumblr</span></a></li>
+									</ul>
+								</div>
+							</div>
+							<h5>Actions</h5>
+							<ul class="actions">
+								<li><a href="#" class="button primary">Default</a></li>
+								<li><a href="#" class="button">Default</a></li>
+							</ul>
+							<ul class="actions small">
+								<li><a href="#" class="button primary small">Small</a></li>
+								<li><a href="#" class="button small">Small</a></li>
+							</ul>
+							<div class="row">
+								<div class="col-6 col-12-small">
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+								</div>
+								<div class="col-6 col-12-small">
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary small">Small</a></li>
+										<li><a href="#" class="button small">Small</a></li>
+									</ul>
+								</div>
+								<div class="col-6 col-12-small">
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary fit">Default</a></li>
+										<li><a href="#" class="button fit">Default</a></li>
+									</ul>
+								</div>
+								<div class="col-6 col-12-small">
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary small fit">Small</a></li>
+										<li><a href="#" class="button small fit">Small</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+
+						<section>
+							<h4>Table</h4>
+							<h5>Default</h5>
+							<div class="table-wrapper">
+								<table>
+									<thead>
+										<tr>
+											<th>Name</th>
+											<th>Description</th>
+											<th>Price</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Item One</td>
+											<td>Ante turpis integer aliquet porttitor.</td>
+											<td>29.99</td>
+										</tr>
+										<tr>
+											<td>Item Two</td>
+											<td>Vis ac commodo adipiscing arcu aliquet.</td>
+											<td>19.99</td>
+										</tr>
+										<tr>
+											<td>Item Three</td>
+											<td> Morbi faucibus arcu accumsan lorem.</td>
+											<td>29.99</td>
+										</tr>
+										<tr>
+											<td>Item Four</td>
+											<td>Vitae integer tempus condimentum.</td>
+											<td>19.99</td>
+										</tr>
+										<tr>
+											<td>Item Five</td>
+											<td>Ante turpis integer aliquet porttitor.</td>
+											<td>29.99</td>
+										</tr>
+									</tbody>
+									<tfoot>
+										<tr>
+											<td colspan="2"></td>
+											<td>100.00</td>
+										</tr>
+									</tfoot>
+								</table>
+							</div>
+
+							<h5>Alternate</h5>
+							<div class="table-wrapper">
+								<table class="alt">
+									<thead>
+										<tr>
+											<th>Name</th>
+											<th>Description</th>
+											<th>Price</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Item One</td>
+											<td>Ante turpis integer aliquet porttitor.</td>
+											<td>29.99</td>
+										</tr>
+										<tr>
+											<td>Item Two</td>
+											<td>Vis ac commodo adipiscing arcu aliquet.</td>
+											<td>19.99</td>
+										</tr>
+										<tr>
+											<td>Item Three</td>
+											<td> Morbi faucibus arcu accumsan lorem.</td>
+											<td>29.99</td>
+										</tr>
+										<tr>
+											<td>Item Four</td>
+											<td>Vitae integer tempus condimentum.</td>
+											<td>19.99</td>
+										</tr>
+										<tr>
+											<td>Item Five</td>
+											<td>Ante turpis integer aliquet porttitor.</td>
+											<td>29.99</td>
+										</tr>
+									</tbody>
+									<tfoot>
+										<tr>
+											<td colspan="2"></td>
+											<td>100.00</td>
+										</tr>
+									</tfoot>
+								</table>
+							</div>
+						</section>
+
+						<section>
+							<h4>Buttons</h4>
+							<ul class="actions">
+								<li><a href="#" class="button primary">Primary</a></li>
+								<li><a href="#" class="button">Default</a></li>
+							</ul>
+							<ul class="actions">
+								<li><a href="#" class="button large">Large</a></li>
+								<li><a href="#" class="button">Default</a></li>
+								<li><a href="#" class="button small">Small</a></li>
+							</ul>
+							<ul class="actions fit">
+								<li><a href="#" class="button primary fit">Fit</a></li>
+								<li><a href="#" class="button fit">Fit</a></li>
+							</ul>
+							<ul class="actions fit small">
+								<li><a href="#" class="button primary fit small">Fit + Small</a></li>
+								<li><a href="#" class="button fit small">Fit + Small</a></li>
+							</ul>
+							<ul class="actions">
+								<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
+								<li><a href="#" class="button icon solid fa-download">Icon</a></li>
+							</ul>
+							<ul class="actions">
+								<li><span class="button primary disabled">Primary</span></li>
+								<li><span class="button disabled">Default</span></li>
+							</ul>
+						</section>
+
+						<section>
+							<h4>Form</h4>
+							<form method="post" action="#">
+								<div class="row gtr-uniform gtr-50">
+									<div class="col-6 col-12-xsmall">
+										<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
+									</div>
+									<div class="col-6 col-12-xsmall">
+										<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
+									</div>
+									<div class="col-12">
+										<select name="demo-category" id="demo-category">
+											<option value="">- Category -</option>
+											<option value="1">Manufacturing</option>
+											<option value="1">Shipping</option>
+											<option value="1">Administration</option>
+											<option value="1">Human Resources</option>
+										</select>
+									</div>
+									<div class="col-4 col-12-small">
+										<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+										<label for="demo-priority-low">Low Priority</label>
+									</div>
+									<div class="col-4 col-12-small">
+										<input type="radio" id="demo-priority-normal" name="demo-priority">
+										<label for="demo-priority-normal">Normal Priority</label>
+									</div>
+									<div class="col-4 col-12-small">
+										<input type="radio" id="demo-priority-high" name="demo-priority">
+										<label for="demo-priority-high">High Priority</label>
+									</div>
+									<div class="col-6 col-12-small">
+										<input type="checkbox" id="demo-copy" name="demo-copy">
+										<label for="demo-copy">Email me a copy of this message</label>
+									</div>
+									<div class="col-6 col-12-small">
+										<input type="checkbox" id="demo-human" name="demo-human" checked>
+										<label for="demo-human">I am a human and not a robot</label>
+									</div>
+									<div class="col-12">
+										<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+									</div>
+									<div class="col-12">
+										<ul class="actions">
+											<li><input type="submit" value="Send Message" class="primary" /></li>
+											<li><input type="reset" value="Reset" /></li>
+										</ul>
+									</div>
+								</div>
+							</form>
+						</section>
+
+						<section>
+							<h4>Image</h4>
+							<h5>Fit</h5>
+							<div class="box alt">
+								<div class="row gtr-50 gtr-uniform">
+									<div class="col-12"><span class="image fit"><img src="images/fulls/05.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/thumbs/01.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/thumbs/02.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/thumbs/03.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/thumbs/04.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/thumbs/05.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/thumbs/06.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/thumbs/03.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/thumbs/02.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/thumbs/01.jpg" alt="" /></span></div>
+								</div>
+							</div>
+							<h5>Left &amp; Right</h5>
+							<p><span class="image left"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+							<p><span class="image right"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+						</section>
+
+					</section>
+				-->
+
+			</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+				<div class="inner">
+					<ul class="icons">
+						<li><a href="https://www.youtube.com/@Mateo.Cordone" class="icon brands fa-youtube"><span class="label">YouTube</span></a></li>
+						<li><a href="https://github.com/matcordone" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="https://www.linkedin.com/in/mateo-cordone-b9b367291/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="mailto:matcordone@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; 2025 Mateo Cordone </li><li>Hosted on: <a href="https://aws.amazon.com/es/free/?trk=21d55203-2d12-48c4-91d5-cbc6182ad523&sc_channel=ps&ef_id=Cj0KCQjw-NfDBhDyARIsAD-ILeCbTLW0LSiF3OKOKFtqHHu_m0gI_O_aIRF-j8Cxch9ZdpBanwYkvZcaArZIEALw_wcB:G:s&s_kwcid=AL!4422!3!648113982959!e!!g!!aws!19666157740!144629913806&gad_campaignid=19666157740&gbraid=0AAAAADjHtp9PncvaC39wQd2SaMgFvTbnJ&gclid=Cj0KCQjw-NfDBhDyARIsAD-ILeCbTLW0LSiF3OKOKFtqHHu_m0gI_O_aIRF-j8Cxch9ZdpBanwYkvZcaArZIEALw_wcB&all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=*all">AWS</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+<script>
+  	function toggleBio() {
+    const bio = document.getElementById('bio');
+	bio.style.display = bio.style.display === 'none' ? 'block' : 'none';
+ }</script>
+
 </body>
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
