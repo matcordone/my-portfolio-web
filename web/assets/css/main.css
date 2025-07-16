@@ -250,6 +250,15 @@ input, select, textarea {
 		text-align: right;
 	}
 
+	/* Phone Fix */
+	@media screen and (max-width: 768px) {
+		.image.avatar {
+			display: block !important;
+			margin-left: 240px !important;
+			margin-right: auto !important;
+		}
+	}
+
 	/* Content Background header */
 
 	.content-bg {
