@@ -258,24 +258,6 @@ input, select, textarea {
 			margin-right: auto !important;
 		}
 	}
-
-	/* Content Background header */
-
-	.content-bg {
-		background-color: none; /* fondo oscuro translúcido */
-		padding: 0%;
-		border-radius: 12px;
-
-	}
-	
-	.content-bg,
-	.content-bg p,
-	.content-bg h1,
-	.content-bg h2,
-	.content-bg a,
-	.content-bg em {
-		color: #ffffffbc; 
-	}
 	
 	/* Container */
 
