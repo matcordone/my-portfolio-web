@@ -18,7 +18,7 @@ resource "aws_cloudfront_distribution" "my_distribution" {
   default_root_object = "index.html"
   price_class         = "PriceClass_100"
 
-  aliases = ["mateocordone.com.ar", "www.mateocordone.com.ar"]
+  aliases = var.aliases1
 
   default_cache_behavior {
     allowed_methods        = ["GET", "HEAD"]

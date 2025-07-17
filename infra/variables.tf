@@ -14,3 +14,7 @@ variable "acm_certificate_arn" {
   description = "The ARN of the ACM certificate for CloudFront"
   type        = string
 }
+variable "aliases1" {
+  description = "List of aliases for the CloudFront distribution"
+  type        = list(string)
+}
