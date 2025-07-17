@@ -35,8 +35,8 @@ resource "aws_cloudfront_distribution" "my_distribution" {
     }
   }
   viewer_certificate {
-    acm_certificate_arn = var.acm_certificate_arn
-    ssl_support_method   = "sni-only"
+    acm_certificate_arn      = var.acm_certificate_arn
+    ssl_support_method       = "sni-only"
     minimum_protocol_version = "TLSv1.2_2021"
   }
   restrictions {
@@ -47,6 +47,6 @@ resource "aws_cloudfront_distribution" "my_distribution" {
   depends_on = [aws_s3_bucket.my_bucket]
 
   tags = {
-    Name        = "my-portfolio-cloudfront"
+    Name = "my-portfolio-cloudfront"
   }
 }

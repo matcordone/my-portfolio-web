@@ -27,7 +27,7 @@ resource "aws_iam_role" "github_actions_role" {
 resource "aws_iam_policy" "github_actions_policy" {
   name        = "MyPortfolioGithubActionsPolicy"
   description = "Policy for GitHub Actions to access S3 and CloudFront"
-  policy      = jsonencode({
+  policy = jsonencode({
     Version = "2012-10-17",
     Statement = [
       {
@@ -51,7 +51,7 @@ resource "aws_iam_policy" "github_actions_policy" {
         Resource = "*"
       }
     ]
-  }) 
+  })
 }
 
 resource "aws_iam_policy_attachment" "github_actions_policy_attachment" {
