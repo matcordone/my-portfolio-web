@@ -10,3 +10,7 @@ variable "oidc_provider_arn" {
   description = "The ARN of the OIDC provider"
   type        = string
 }
+variable "acm_certificate_arn" {
+  description = "The ARN of the ACM certificate for CloudFront"
+  type        = string
+}
